@@ -23,25 +23,39 @@
     />
   </head>
   <body class="bg-base-300">
-    <header class="w-[80%] mx-auto">
+    <header class="w-[80%] mx-auto ">
       <h1 class="text-3xl font-bold pt-10 pb-5 text-[#002C5C]">
         Job Application Tracker
       </h1>
-      <div class="grid grid-cols-3 gap-8 pb-5 border-b-1 border-[#E6E7E9]">
+      <div class="grid grid-cols-3 gap-8  border-b-2 border-[#E6E7E9] pb-7">
         <div class="bg-base-100 p-4 rounded-xl">
           <p class="">Total</p>
           <p id="total" class="text-[#002C5C] font-bold">0</p>
         </div>
 
         <div class="bg-base-100 p-4 rounded-xl">
-          <p class="">Interview </p>
+          <p class="">Interview</p>
           <p id="total" class="text-[#10B981] font-bold">0</p>
         </div>
         <div class="bg-base-100 p-4 rounded-xl">
-          <p class=""> Rejected</p>
+          <p class="">Rejected</p>
           <p id="total" class="text-[#EF4444] font-bold">0</p>
         </div>
       </div>
     </header>
+
+    <main class="w-[80%] mx-auto">
+      <section class="pt-5 pb-4 flex gap-3">
+        <h2 class="text-[#002C5C] font-semibold">Available Jobs</h2>
+        <p class="text-[#64748B]">  <span id="jobs">0</span> jobs</p>
+      </section>
+
+       <section>
+            <button class="btn btn-xs px-6.5 text-[#64748B]">All</button>
+            <button class="btn btn-xs px-3  text-[#64748B]"> Interview</button>
+            <button class="btn btn-xs px-3  text-[#64748B]">Rejected</button>
+             
+       </section>
+    </main>
   </body>
 </html>
