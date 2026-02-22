@@ -64,11 +64,11 @@
       </section>
 
       <section>
-        <button id="btn-all" class="btn-file btn   btn-active btn-xs px-7   bg-[#3B82F6] text-white">All</button>
-        <button id="btn-interview" class="btn-file btn  btn-active btn-xs px-3 text-[#64748B]">
+        <button onclick="toggle('btn-all')"  id="btn-all" class=" btn btn-active  btn-xs px-7   bg-[#3B82F6] text-white">All</button>
+        <button onclick="toggle('btn-interview')"  id="btn-interview" class=" btn btn-active   btn-xs px-3 text-[#64748B]">
           Interview
         </button>
-        <button id="btn-rejected" class="btn-file btn  btn-active btn-xs px-3 text-[#64748B]">
+        <button onclick="toggle('btn-rejected')" id="btn-rejected" class=" btn btn-active btn-xs px-3 text-[#64748B]">
           Rejected
         </button>
       </section>
@@ -423,6 +423,12 @@
     
 
     <!-- Rejected file section -->
+
+    <div class="mb-6">
+            <button onclick="toggleStyle('all-filter-btn')"  class="bg-black text-white px-5 py-2" id="all-filter-btn">All</button>
+            <button onclick="toggleStyle('thriving-filter-btn')"  class="bg-gray-300 px-5 py-2" id="thriving-filter-btn">Thriving</button>
+            <button onclick="toggleStyle('struggling-filter-btn')"  class="bg-gray-300 px-5 py-2" id="struggling-filter-btn">Struggling</button>
+        </div>
     
 
     <script src="./script/scirpt.js"></script>
