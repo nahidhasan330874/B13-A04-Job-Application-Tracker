@@ -14,10 +14,22 @@ function toggle(id) {
   interviewBtn.classList.add("btn", "text-[#64748B]");
   rejectedBtn.classList.add("btn", "text-[#64748B]");
 
+    const interview = document.getElementById('Interview-file');
   
   const selected = document.getElementById(id);
 
   selected.classList.add("bg-[#3B82F6]", "text-white");
+
+    if(id == 'btn-interview'){
+      interview.classList.remove('hidden');
+      allCardsSection.classList.add('hidden');
+      filteredSection.classList.remove('hidden');
+    }
+    else if ( id == "btn-all"){
+        allCardsSection.classList.remove('hidden');
+        filteredSection.classList.add('hidden')
+    }
+
 }
 
 
@@ -32,7 +44,22 @@ function showOnly(id){
     rejected.classList.add('hidden');
 
     const selectedBtn = document.getElementById(id);
-    selectedBtn.classList.remove( 'hidden');
+    selectedBtn.classList.remove('hidden');
+
+     if(id == 'card-btn-interview'){
+       allCardsSection.classList.remove('hidden');
+       interview.classList.add('hidden');
+      filteredSection.classList.add('hidden');
+    }  
+    else if(id == 'btn-interview'){
+      allCardsSection.classList.add('hidden');
+      interview.classList.add('hidden');
+      filteredSection.classList.remove('hidden');
+    } else if ( id == "btn-all"){
+        interview.classList.add('hidden');
+        allCardsSection.classList.remove('hidden');
+        filteredSection.classList.add('hidden')
+    }
 }
 
  
