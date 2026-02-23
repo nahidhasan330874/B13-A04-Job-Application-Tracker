@@ -82,7 +82,7 @@
       <!-- card section  -->
   <section id="all-cards" class="space-y-5 ">
         <!-- card 1 -->
-        <div  id="Interview-btn" class="bg-base-100 p-6 mt-4 rounded-xl shadow ">
+        <div  id="Interview-btn" class="  bg-base-100 p-6 mt-4 rounded-xl shadow ">
           <div class="flex justify-between">
             <div>
               <h2 class="card1-head text-[#002C5C] text-[18px] font-semibold">
@@ -105,7 +105,7 @@
           </div>
 
           <div>
-            <button id="btn-not-applied" class=" card1-btn btn btn-sm btn-active text-[#002C5C] bg-[#e5eaf1] border-none">
+            <button id="btn-not-applied" class=" card1-btn cursor-default  btn btn-sm btn-active text-[#002C5C] bg-[#e5eaf1] border-none">
               NOT APPLIED
             </button>
           </div>
@@ -120,7 +120,51 @@
             <button  onclick=" showOnly('card-btn-interview')" id="card-btn-interview" class="card1-interview btn btn-outline btn-success btn-sm">
               INTERVIEW
             </button>
-            <button class=" card1-rejected btn btn-outline btn-error btn-sm">REJECTED</button>
+            <button  onclick=" showOnly('card-btn-interview')"  id="card-btn-rejected" class=" card2-rejected btn btn-outline btn-error btn-sm">REJECTED</button>
+          </div>
+        </div>
+
+        <div  id="Interview-btn" class="bg-base-100 p-6 mt-4 rounded-xl shadow ">
+          <div class="flex justify-between">
+            <div>
+              <h2 class="card1-head text-[#002C5C] text-[18px] font-semibold">
+                Mobile 
+              </h2>
+              <p class="card2-Explain text-[#64748B]">React Native Developer</p>
+            </div>
+
+            <div class="flex items-center">
+              <button
+                class="btn-delete btn rounded-full px-3 btn-base-100 text-[#64748B] shadow"
+              >
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="  text-[#64748B] text-[14px] py-4">
+            <p class="card1-money ">Remote • Full-time • $130,000 - $175,000</p>
+          </div>
+
+          <div>
+            <button id="btn-not-applied" class=" card1-btn btn cursor-default  btn-sm btn-active text-[#002C5C] bg-[#e5eaf1] border-none">
+              NOT APPLIED
+            </button>
+          </div>
+            
+         <div> 
+          <p class="card1-lisen  text-[#323B49] text-[14px] pt-1">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+          </div>
+            
+
+          <div class="pt-4">
+            <button   id="card-btn-interview" class="card1-interview btn btn-outline btn-success btn-sm">
+              INTERVIEW
+            </button>
+            <button  id="card-btn-rejected" class=" card2-rejected btn btn-outline btn-error btn-sm">REJECTED</button>
           </div>
         </div>
         <!-- card-> 2 -->
@@ -176,7 +220,7 @@
 
  <section class="pb-10 -mt-4">
      <!-- Interview file section  -->
-    <section id="Interview-file"  class="w-[80%] mx-auto bg-base-100 p-30 rounded-xl flex flex-col justify-center items-center gap-4 hidden ">
+    <section id="Interview-file"    class="Interviews w-[80%] mx-auto bg-base-100 p-30 rounded-xl flex flex-col justify-center items-center gap-4 hidden ">
              <div>
                    <img src="./images/jobs.png" alt="">
              </div>
@@ -187,7 +231,7 @@
     </section>
           
      <!-- Rejected file section -->
-    <section id="Rejected-file"  class="w-[80%] mx-auto bg-base-100 p-30 rounded-xl flex flex-col justify-center items-center gap-4 hidden ">
+    <section id="Rejected-file"   class="Rejecteds w-[80%] mx-auto bg-base-100 p-30 rounded-xl flex flex-col justify-center items-center gap-4 hidden ">
              <div>
                    <img src="./images/jobs.png" alt="">
              </div>
