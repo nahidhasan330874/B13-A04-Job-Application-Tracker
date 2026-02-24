@@ -16,9 +16,9 @@ function allCards() {
   total.innerText = allCardsSection.children.length;
   jod.innerText = allCardsSection.children.length;
   Interview.innerText = interview.length;
-  //  jod.innerText = interview.length;
+
   Rejected.innerText = rejected.length;
-  //  jod.innerText = rejected.length;
+  
 
 }
 function alCard(){
@@ -31,11 +31,19 @@ function rejCard(){
    jod.innerText = rejected.length;
 }
  allCards()
+
+
+
+
+ 
  
 mainContainer.addEventListener("click", function (event) {
   if (event.target.classList.contains("card1-interview")) {
-    const parentNode = event.target.parentNode.parentNode;
+    
+     
 
+    const parentNode = event.target.parentNode.parentNode;
+    
     const head = parentNode.querySelector(" .card1-head").innerText;
     const Explain = parentNode.querySelector(".card2-Explain").innerText;
     const money = parentNode.querySelector(".card1-money").innerText;
@@ -65,8 +73,11 @@ mainContainer.addEventListener("click", function (event) {
     rejected = rejected.filter(item => item.head != cardInfo.head);
      if(currentStatus === 'btn-rejected') rejectedTracker();
 
+   const card = event.target.closest("#Interview-btn");
+    card.classList.add("interview");  
+
      allCards();
-    interviewTracker();
+     rejectedTracker() ;
   } else if (event.target.classList.contains("card2-rejected")) {
     const parentNode = event.target.parentNode.parentNode;
 
@@ -89,7 +100,6 @@ mainContainer.addEventListener("click", function (event) {
     };
     const exist = rejected.find(item => item.head == cardInfo.head);
     
-    
     if (!exist) {
       rejected.push(cardInfo);
     }
@@ -99,7 +109,7 @@ mainContainer.addEventListener("click", function (event) {
     
 
     allCards();
-   
+
   }
 });
 
@@ -208,5 +218,6 @@ function rejectedTracker() {
   }
     allCards();
 }
+
 
 
