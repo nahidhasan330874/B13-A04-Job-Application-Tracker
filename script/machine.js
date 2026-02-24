@@ -51,38 +51,7 @@ function toggle(id) {
 }
 
 
-// hide all / show id
-function showOnly(id){
 
-    // const allCards = document.getElementById('all-cards');
-    // const interviews = document.getElementById('Interview-file');
-    // const reject = document.getElementById('Rejected-file');
-    
-     
-  
-    // allCards.classList.add('hidden');
-    // interviews.classList.add('hidden');
-    // reject.classList.add('hidden');
-    
-
-    // const selectedBtn = document.getElementById(id);
-    // selectedBtn.classList.remove('hidden');
-       
-     if(id == 'card-btn-interview'){
-        allCardsSection.classList.add('hidden');
-        filteredSection.classList.remove('hidden');
-     }
-    else if(id == 'btn-all'){
-      allCardsSection.classList.remove('hidden');
-      filteredSection.classList.add('hidden');
-
-    
-    } else if( id == "card-btn-rejected"){
-        allCardsSection.classList.remove('hidden');
-        filteredSection.classList.add('hidden');
-    };
-   
-}
  
 function clickOnly(type){
    const allCards = document.getElementById('all-cards');
@@ -103,9 +72,9 @@ function clickOnly(type){
   else if (type === 'interview') {
 
     if (interview.length === 0) {
-      interviews.classList.remove('hidden');   // No jobs show
+      interviews.classList.remove('hidden');    
     } else {
-      filtered.classList.remove('hidden');     // Card show
+      filtered.classList.remove('hidden');     
       interviewTracker();
     }
   }
@@ -113,9 +82,9 @@ function clickOnly(type){
   else if (type === 'rejected') {
 
     if (rejected.length === 0) {
-      reject.classList.remove('hidden');       // No jobs show
+      reject.classList.remove('hidden');      
     } else {
-      filtered.classList.remove('hidden');     // Card show
+      filtered.classList.remove('hidden'); 
       rejectedTracker();
     }
   }

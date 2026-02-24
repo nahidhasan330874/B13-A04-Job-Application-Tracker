@@ -83,6 +83,7 @@ mainContainer.addEventListener("click", function (event) {
 
     const head = parentNode.querySelector(" .card1-head").innerText;
     const Explain = parentNode.querySelector(".card2-Explain").innerText;
+    const deleted = parentNode.querySelector(".btn-delete").innerText;
     const money = parentNode.querySelector(".card1-money").innerText;
     const button = parentNode.querySelector(".card1-btn").innerText;
     const texts = parentNode.querySelector(".card1-lisen")?.innerText;
@@ -92,6 +93,7 @@ mainContainer.addEventListener("click", function (event) {
     const cardInfo = {
       head,
       Explain,
+      deleted,
       money,
       button: ` <button class=" card2-rejected btn btn-active border-none px-3 cursor-default  btn-error btn-sm">
             REJECTED</button>`,
@@ -132,7 +134,7 @@ function interviewTracker() {
               <button
                 class="btn-delete btn rounded-full px-3 btn-base-100 text-[#64748B] shadow"
               >
-                <i class="fa-regular fa-trash-can"></i>
+                  <i class="fa-regular fa-trash-can"></i>
               </button>
             </div>
           </div>
